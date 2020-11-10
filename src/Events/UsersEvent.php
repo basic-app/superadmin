@@ -11,4 +11,11 @@ class UsersEvent extends \BasicApp\Event\BaseEvent
 
     public $users = [];
 
+    public function __construct(array $users = [])
+    {
+        parent::__construct();
+
+        $this->users = $users;
+    }
+
 }

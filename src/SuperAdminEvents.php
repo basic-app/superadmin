@@ -27,7 +27,7 @@ class SuperAdminEvents extends \CodeIgniter\Events\Events
 
         $event = new UsersEvent([get_object_vars($config)]);
 
-        $event->trigger(static::USERS_EVENT);
+        $event->trigger(static::EVENT_USERS);
 
         return $event->users;
     }
