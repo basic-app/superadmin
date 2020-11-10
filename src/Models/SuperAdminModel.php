@@ -36,7 +36,7 @@ class SuperAdminModel implements AuthModelInterface
     {
         foreach($this->findAll($refresh) as $id => $admin)
         {
-            if ($admin[$field] == $value)
+            if (array_key_exists($field, $admin) && ($admin[$field] == $value))
             {
                 return $admin;
             }
