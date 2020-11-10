@@ -1,0 +1,13 @@
+{
+    "name": "basic-app/superadmin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BasicApp\\SuperAdmin\\": "src/"
+        }
+    },
+    "require": {
+        "basic-app/event": "*",
+        "basic-app/auth": "*"
+    }
+}
