@@ -3,11 +3,11 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "BasicApp\\SuperAdmin\\": "src/"
+            "BasicApp\\SuperAdmin\\": ""
         }
     },
     "require": {
-        "basic-app/event": "*",
+        "webmozart/assert" : "*",
         "basic-app/auth": "*"
     }
 }

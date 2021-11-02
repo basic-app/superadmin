@@ -6,7 +6,7 @@
  */
 namespace BasicApp\SuperAdmin\Config;
 
-class SuperAdmin extends \CodeIgniter\Config\BaseConfig
+class Admin extends \CodeIgniter\Config\BaseConfig
 {
 
     public $username;
