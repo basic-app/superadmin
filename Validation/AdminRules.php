@@ -21,21 +21,16 @@ class AdminRules
 
         $config = config(AdminConfig::class);
 
-        if (!$config)
+        if (!$config || !$config->username)
         {
-            Assert::notEmpty($config, 'Config not found.');
-        }
-
-        if (!$config->username)
-        {
-            $error = lang('Username not defined in config.');
+            $error = lang('Username not found in application config.');
         
             return false;
         }
 
-        if (!$config->password)
+        if (!$config || !$config->password)
         {
-            $error = lang('Password not defined in config.');
+            $error = lang('Password not defined in application config.');
         
             return false;
         }
