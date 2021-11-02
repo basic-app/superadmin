@@ -4,7 +4,7 @@
  * @license MIT
  * @link https://basic-app.com
  */
-namespace BasicApp\SuperAdmin\Config;
+namespace BasicApp\Admin\Config;
 
 class Admin extends \CodeIgniter\Config\BaseConfig
 {

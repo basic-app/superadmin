@@ -4,9 +4,9 @@
  * @license MIT
  * @link https://basic-app.com
  */
-namespace BasicApp\SuperAdmin\Validation;
+namespace BasicApp\Admin\Validation;
 
-use BasicApp\SuperAdmin\Config\Admin as AdminConfig;
+use BasicApp\Admin\Config\Admin as AdminConfig;
 use Webmozart\Assert\Assert;
 
 class AdminRules
@@ -19,7 +19,7 @@ class AdminRules
             return true;
         }
 
-        $config = config(SuperAdminConfig::class);
+        $config = config(AdminConfig::class);
 
         if (!$config)
         {

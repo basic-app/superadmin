@@ -4,7 +4,7 @@
  * @license MIT
  * @link https://basic-app.com
  */
-namespace BasicApp\SuperAdmin;
+namespace BasicApp\Admin;
 
 class AdminService extends \BasicApp\Auth\AuthService
 {
